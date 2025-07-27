@@ -1,10 +1,9 @@
  --Finds user that makes post containing emptystack at the date of april 2048
- SELECT fa.username 
- FROM forum_posts fp 
- JOIN forum_accounts fa ON fp.author = fa.username 
- WHERE fp.content ILIKE '%emptystack%' 
- AND fp.date >= '2048-04-01' 
- AND fp.date < '2048-05-01';
+ SELECT username 
+ FROM forum_posts 
+ WHERE content ILIKE '%emptystack%' 
+ AND date >= '2048-04-01' 
+ AND date < '2048-05-01';
 --smart-money-44
 
 --Finds last name of person associated with smart-money-44 account
